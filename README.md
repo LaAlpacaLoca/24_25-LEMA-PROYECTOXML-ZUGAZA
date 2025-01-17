@@ -2,3 +2,4 @@
 
 Proyecto para LEMA.
 
+Nichita, Koldo y Unai.
