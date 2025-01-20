@@ -1,0 +1,59 @@
+<tienda>
+	<iva>10</iva>
+    <servicios>
+        <servicio id="s001">
+            <nombre>chequeo medico de alpacas</nombre>
+            <precio moneda="yen">5000</precio>
+            <ganancia>3000</ganancia>
+        </servicio>
+        <servicio id="s002">
+            <nombre>Corte de pelo y esquilado de alpacas</nombre>
+            <precio moneda="yen">3000</precio>
+            <ganancia>2000</ganancia>
+        </servicio>
+        <servicio id="s003">
+            <nombre>Alimentación de alpacas</nombre>
+            <precio moneda="yen">12000</precio>
+            <ganancia>1300</ganancia>
+        </servicio>
+    </servicios>
+
+    <productos>
+        <producto id="p001">
+            <nombre>Paquete heno para alpacas 5kg</nombre>
+            <precio moneda="yen">13000</precio>
+            <ganancia>10000</ganancia>
+            <marca>Rodrigo milanuncios</marca>
+            <imagen>heno.jpg</imagen>
+            <stock>37855</stock>
+        </producto>
+
+        <producto id="p002">
+            <nombre>champu para alpacas</nombre>
+            <precio moneda="yen">20000</precio>
+            <ganancia>0</ganancia>
+            <marca>Pet Prince</marca>
+            <imagen>champu_para_alpacas.jpg</imagen>
+            <stock>63</stock>
+        </producto>
+
+        <producto id="p003">
+            <nombre>Peluche de Alpaca en Lana de Alpaca Natural (23cm)</nombre>
+            <precio moneda="yen">14520</precio>
+            <ganancia>1000</ganancia>
+            <marca>Inkari</marca>
+            <imagen>peluche_alpaca.jpg</imagen>
+            <stock>69</stock>
+        </producto>
+
+        <producto id="p004">
+            <nombre>Chal de piel de alpaca</nombre>
+            <precio moneda="yen">14520</precio>
+            <ganancia>1000</ganancia>
+            <marca>Inkari</marca>
+            <imagen>peluche_alpaca.jpg</imagen>
+            <stock>69</stock>
+        </producto>
+    </productos>
+
+</tienda>
