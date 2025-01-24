@@ -156,6 +156,10 @@ body {
     font-size: clamp(16px, 2vw, 27px);
   }
 
+  h2.contacto {
+    text-align: center;
+  }
+
 /* Footer */
 
 footer {
@@ -216,4 +220,12 @@ footer {
 
   }
 
-  
+  div.formulario {
+    text-align: center;
+    font-size: 1.1em;
+  }
+
+  input, textarea, select {
+    margin: 5px 0 15px 0;
+    font-size: 1.1em;
+  }

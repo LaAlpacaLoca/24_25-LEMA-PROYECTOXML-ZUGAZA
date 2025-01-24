@@ -24,33 +24,39 @@
                 </nav>
 			</div>
         </header>
-        <div class="container py-5">
-                <form class="col-md-9 m-auto" method="post" role="form">
-                    <div class="row">
-                        <div class="form-group col-md-6 mb-3">
-                            <label for="name">Nombre</label>
-                            <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Nombre">
+        <article>
+            <h2 class="contacto">Formulario de contactos</h2>
+            <br>
+            <div class="formulario">
+                    <form>
+                        <div>
+                            <div>
+                                <label for="name">Nombre</label>
+                                <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Nombre">
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Email">
+                            </div>
                         </div>
-                        <div class="form-group col-md-6 mb-3">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Email">
+                        <div>
+                            <label for="subject">Asunto</label>
+                            <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Asunto">
                         </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="subject">Asunto</label>
-                        <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Asunto">
-                    </div>
-                    <div class="mb-3">
-                        <label for="message">Mensaje</label>
-                        <textarea class="form-control mt-1" id="message" name="message" placeholder="Mensaje" rows="8"></textarea>
-                    </div>
-                    <div class="row">
-                        <div class="col text-end mt-2">
-                            <button type="submit" class="btn btn-success btn-lg px-3">Enviar</button>
+                        <br>
+                        <div>
+                            <label for="message">Mensaje</label>
+                            <br>
+                            <textarea class="form-control mt-1" id="message" name="message" placeholder="Mensaje"   rows="8"></textarea>
                         </div>
-                    </div>
-                </form>
-        </div>
+                        <div>
+                            <div class="col text-end mt-2">
+                                <button type="submit" class="btn btn-success btn-lg px-3">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+        </article>
         <footer>&copy; 2025 Koldo, Unai, Nichita. Todos los derechos reservados.</footer>
     </body>
 </html>
