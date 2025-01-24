@@ -1,15 +1,124 @@
-*{
+*, body{
     font-family: "Comic Sans MS", "Comic Sans";
+    margin: 0px;
+    max-width: 100vw;
+    box-sizing: border-box;
 }
 
-nav {
-    display: inline-block;
+html,
+body {
+    padding: 0; /* espaciado interior del cuerpo a 0 */
+    margin: 0;  /* espaciado exterior del cuerpo a 0 */
+    box-sizing: border-box;
 }
 
-a {
-    color: black;
+/* Estilos para el navegador */
+.menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ff8c42;
+    color: #f0f4f1;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .logo {
+    flex-grow: 1;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #393e46;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0 1.5rem 0 0; /* Espacio a la derecha del menú */
+  }
+  
+  .menu li {
+    padding: 0 1rem;
+    border-radius: 4px;
+  }
+
+  .menu li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    padding: 1rem;
 }
 
- {
-    color: black;
+.menu li:hover {
+    background-color: #d67437;
 }
+
+.menu li a:hover {
+    color: #747202;
+    background-color: #d67437;
+}
+
+
+  .menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  /* Estilos para el menú hamburguesa */
+  .menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+/* Footer */
+
+footer {
+  font-size: clamp(14px, 2vw, 17px);
+  width: 100%;
+  background-color: #ff8c42;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+
+  /* Vista de menú en dispositivos móviles */
+  @media (max-width: 978px) {
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .menu ul li {
+        text-align: center;
+        margin: 1rem 0;
+    }
+  
+    .menu-icon {
+        display: block;
+    }
+  
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+    }
+  }
+
+  
