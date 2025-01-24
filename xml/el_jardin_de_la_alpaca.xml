@@ -1,4 +1,5 @@
-<tienda>
+<tienda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../xsd/el_jardin_de_la_alpaca.xsd">
 	<iva>10</iva>
     <servicios>
         <servicio id="s001">

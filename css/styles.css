@@ -14,18 +14,19 @@ body {
 }
 
 /* Estilos para el navegador */
+
 .menu {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: #ff8c42;
-    color: #f0f4f1;
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-  }
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #ff8c42;
+  color: #f0f4f1;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
   
   .logo {
     flex-grow: 1;
@@ -162,7 +163,7 @@ footer {
   width: 100%;
   background-color: #ff8c42;
   color: rgb(255, 255, 255);
-  padding: 20px;
+  padding: 22px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -212,7 +213,6 @@ footer {
     .inner-box article {
       width: 90%;
     }
-
 
   }
 
