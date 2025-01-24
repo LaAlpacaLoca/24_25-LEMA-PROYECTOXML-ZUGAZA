@@ -10,6 +10,7 @@ body {
     padding: 0; /* espaciado interior del cuerpo a 0 */
     margin: 0;  /* espaciado exterior del cuerpo a 0 */
     box-sizing: border-box;
+    font-size: clamp(13px, 2vw, 16px);
 }
 
 /* Estilos para el navegador */
@@ -31,6 +32,7 @@ body {
     font-size: 1.4rem;
     font-weight: bold;
     color: #393e46;
+    user-select: none;
   }
   
   .menu ul {
@@ -85,6 +87,74 @@ body {
     display: none;
   }
   
+/* Main */
+
+  main {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+    text-align-last: center;
+    background-color: #ffeadd;
+  }
+
+  main h1 {
+    font-size: clamp(17px, 2vw, 30px);
+  }
+
+/* cuerpo */
+.alpaca {
+  width: 100%;
+  perspective: 1000px;
+  overflow: hidden;
+  position: relative;
+}
+
+.inner-box {
+  width: 100%;
+  height: 100%;
+  background-image: url(../imagenes/alpaca_face.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.inner-box article {
+  border-radius: 4px;
+  background-color: white;
+  width: 40% ;
+  margin: 30px;
+  padding: 10px;
+}
+
+.inner-box article h2 {
+  text-align: center;
+}
+
+.resenia {
+  padding: 10px;
+}
+
+  article {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #ffeadd;
+  }
+
+  article li {
+    padding-top: 6px;
+  }
+  h2 {
+    font-size: clamp(16px, 2vw, 27px);
+  }
+
 /* Footer */
 
 footer {
@@ -97,9 +167,12 @@ footer {
   text-align: center;
 }
 
+.resenia footer {
+  background-color: #4ec443;
+  padding: 5px;
+}
 
-
-  /* Vista de menú en dispositivos móviles */
+  /* Vista en dispositivos móviles */
   @media (max-width: 978px) {
     .menu ul {
         display: none;
@@ -119,6 +192,28 @@ footer {
     #menu-toggle:checked + .menu-icon + ul {
         display: flex;
     }
+
+    .alpaca {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .inner-box {
+      width: 100%;
+      height: 100%;
+      background-image: url(../imagenes/alpaca_face.webp);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding: 1px;
+      display: inline;
+    }
+
+    .inner-box article {
+      width: 90%;
+    }
+
+
   }
 
   
