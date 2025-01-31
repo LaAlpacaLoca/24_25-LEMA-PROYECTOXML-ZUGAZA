@@ -1,4 +1,4 @@
-<?xml-model href="../dtd/el_jardin_de_la_alpaca.dtd"?>
+<?xml-model?>
 <tienda>
 	<iva>10</iva>
     <servicios>
@@ -6,16 +6,19 @@
             <nombre>chequeo medico de alpacas</nombre>
             <precio moneda="yen">5000</precio>
             <ganancia>3000</ganancia>
+            <imagen></imagen>
         </servicio>
         <servicio id="s002">
             <nombre>Corte de pelo y esquilado de alpacas</nombre>
             <precio moneda="yen">3000</precio>
             <ganancia>2000</ganancia>
+            <imagen>../imagenes/esquila_de_alpaca.jpg</imagen>
         </servicio>
         <servicio id="s003">
             <nombre>Alimentación de alpacas</nombre>
             <precio moneda="yen">12000</precio>
             <ganancia>1300</ganancia>
+            <imagen>../imagenes/alimentacion_alpaca.jpg</imagen>
         </servicio>
     </servicios>
 
