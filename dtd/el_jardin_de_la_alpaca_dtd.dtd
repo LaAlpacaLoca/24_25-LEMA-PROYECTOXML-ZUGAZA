@@ -1,0 +1,29 @@
+<!ELEMENT tienda (iva, servicios, productos)>
+<!ELEMENT iva (#PCDATA)>
+
+<!ELEMENT servicios (servicio+)>
+<!-- Definición de los servicios ofrecidos por la tienda -->
+<!ELEMENT servicio (nombre, precio, ganancia?, imagen*, enlace, descuento)>
+<!-- El id es obligatorio para cada servicio -->
+<!ATTLIST servicio id NMTOKEN #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!-- Moneda puede tomar los valores "yen", "usd" o "euro", siendo "yen" el valor por defecto si no se especifica -->
+<!ATTLIST precio moneda (yen | usd | euro) "yen">
+<!ELEMENT ganancia (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT enlace (#PCDATA)>
+<!ELEMENT descuento (#PCDATA)>
+
+<!ELEMENT productos (producto+)>
+<!-- Definición de los productos en la tienda -->
+<!ELEMENT producto (nombre, precio, ganancia, marca, imagen, stock, enlace, descuento)>
+<!-- El id es obligatorio para cada producto -->
+<!ATTLIST producto id NMTOKEN #REQUIRED>
+
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT stock (#PCDATA)>
+
+<!-- Atributo 'moneda' en precio se establece como fijo -->
+<!-- Atributo 'id' en servicio y producto se establece como obligatorio -->

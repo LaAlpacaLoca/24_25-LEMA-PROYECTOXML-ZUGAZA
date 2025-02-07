@@ -160,6 +160,20 @@ body {
     text-align: center;
   }
 
+  .contador {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff8c42;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 /* Footer */
 
 footer {
@@ -220,6 +234,11 @@ footer {
 
   }
 
+  table img {
+    width: 230px;
+    height: auto;
+  }
+
   div.formulario {
     text-align: center;
     font-size: 1.1em;
@@ -237,8 +256,17 @@ footer {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 1px;
     display: inline;
+  }
+
+  .formu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .formulario_foto {
+    width: 330px;
+    height: auto;
   }
 /* Tablas */
 
@@ -254,7 +282,7 @@ caption{
 }
 
 table{
-  margin: 0 auto;
+  margin: 5 auto;
   border-collapse: collapse;
   border-style: inset black;
   width: 80%;
