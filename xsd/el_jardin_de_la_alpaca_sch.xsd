@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="tienda">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="iva" type="xs:string" />
+                <xs:element name="servicios">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="servicio" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="TipoNombre" maxOccurs="1" />
+                                        <xs:element name="precio">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="TipoPrecio">
+                                                        <xs:attribute name="moneda" type="TipoMoneda" default="yen"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="ganancia" type="xs:string" />
+                                        <xs:element name="imagen" type="xs:string" />
+                                        <xs:element name="enlace" type="xs:string" />
+                                        <xs:element name="descuento" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:ID" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="productos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="producto" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="TipoNombre" maxOccurs="1"/>
+                                        <xs:element name="precio">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="moneda" type="TipoMoneda" default="yen" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="ganancia" type="xs:string" />
+                                        <xs:element name="marca" type="xs:string" />
+                                        <xs:element name="imagen" type="xs:string" />
+                                        <xs:element name="stock" type="xs:string" />
+                                        <xs:element name="enlace" type="xs:string" />
+                                        <xs:element name="descuento" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:ID" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <!-- RESTRICIONES-->
+    <xs:simpleType name="TipoPrecio">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0"></xs:minInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoMoneda">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="yen"></xs:enumeration>
+            <xs:enumeration value="usd"></xs:enumeration>
+            <xs:enumeration value="euro"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoNombre">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z][A-Za-zZáéíóúñÑ0-9() ]*"></xs:pattern>
+            <xs:minLength value="4"></xs:minLength>
+        </xs:restriction>
+
+
+    </xs:simpleType>
+
+
+
+</xs:schema>

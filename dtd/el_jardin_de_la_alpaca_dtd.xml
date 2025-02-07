@@ -4,7 +4,7 @@
     <servicios>
      <!-- Lista de servicios ofrecidos en la tienda -->
         <servicio id="s001">
-            <nombre>chequeo medico de alpacas</nombre>
+            <nombre>Chequeo medico de alpacas</nombre>
             <precio moneda="yen">5000</precio>
             <ganancia>3000</ganancia>
             <imagen>../imagenes/medico.jpg</imagen>
@@ -43,7 +43,7 @@
         </producto>
 
         <producto id="p002">
-            <nombre>champu para alpacas</nombre>
+            <nombre>Champu para alpacas</nombre>
             <precio moneda="yen">20000</precio>
             <ganancia>0</ganancia>
             <marca>Pet Prince</marca>
