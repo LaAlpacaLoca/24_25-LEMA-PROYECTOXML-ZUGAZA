@@ -1,6 +1,6 @@
 # 24_25-LEMA-PROYECTOXML-ZUGAZA
 
-###Proyecto para LEMA.
+<div align="center"> Proyecto para LEMA. </div>
 
 ### Descripción de las Carpetas
 
