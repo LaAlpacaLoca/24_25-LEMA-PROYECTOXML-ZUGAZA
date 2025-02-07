@@ -27,8 +27,8 @@
 ## Participantes
 
 <div align="center">
-  - Nichita
-  - Joshua
-  - Unai
-  - Koldo
+  Nichita
+  Joshua
+  Unai
+  Koldo
 </div>
