@@ -20,6 +20,8 @@
                 <li><a href="../index.html">Página Principal</a></li>
                 <li><a href="#">Servicios</a></li>
                 <li><a href="productos.xml">Productos</a></li>
+                <li><a href="todos.xml">Todos</a></li>
+                <li><a href="separados.xml">Separados</a></li>
                 <li><a href="../portfolio/contacto.html">Contacto</a></li>
             </ul>
         </nav>   
@@ -35,7 +37,7 @@
                 <th>Nombre</th>
                 <th>Precio</th>
                 <th>Precio + IVA</th>  
-                <th>Precio + IVA - Descuento</th>  
+                <th>Descuento</th>  
                 <th>Ganancia</th>            
                 <th>Imagen</th>
                 <th>Enlace</th>
@@ -46,7 +48,7 @@
                         <td><xsl:value-of select="nombre"/></td>
                         <td><xsl:value-of select="precio"/></td>
                         <td><xsl:value-of select="precio + (precio * $iva div 100)"/></td>
-                        <td><xsl:value-of select="precio + (precio * $iva div 100) - (precio * (descuento div 100))"/></td>
+                        <td><xsl:value-of select="concat(descuento, '%')"/></td>
                         <td><xsl:value-of select="ganancia"/></td>
                         <td> 
                             <img src="{imagen}" alt="{nombre}"/> 

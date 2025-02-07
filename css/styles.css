@@ -156,6 +156,12 @@ body {
     font-size: clamp(16px, 2vw, 27px);
   }
 
+  h2.tabletitle {
+    background-color: #ffeadd;
+    margin: 0;
+    text-align: center;
+  }
+
   h2.contacto {
     text-align: center;
   }
@@ -190,6 +196,8 @@ footer {
   background-color: #4ec443;
   padding: 5px;
 }
+
+
 
   /* Vista en dispositivos móviles */
   @media (max-width: 978px) {
@@ -232,6 +240,29 @@ footer {
       width: 90%;
     }
 
+    table {
+      width: 100%;
+      table-layout: fixed;
+      overflow-x: auto;
+    }
+  
+    tr:first-child th {
+      font-size: 90%;
+    }    
+
+    th, td {
+      font-size: 80%;
+      padding: 6px;
+      word-wrap: break-word;
+    }
+  
+    table img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 3px;
+    }
   }
 
   table img {
@@ -291,11 +322,16 @@ table{
   background-color: beige;
 }
 
-th, td{
+th {
+  font-size: 90%;
+}
+
+th, td {
   border: 2px inset black;
   text-align: center;
   padding: 10px;
 }
+
 
 th{
   font-size: 1.5em;

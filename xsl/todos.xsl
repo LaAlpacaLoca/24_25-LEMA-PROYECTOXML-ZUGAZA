@@ -18,31 +18,28 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul>
                 <li><a href="../index.html">Página Principal</a></li>
-				<li><a href="servicios.xml">Servicios</a></li>
-				<li><a href="#">Productos</a></li>
-                <li><a href="todos.xml">Todos</a></li>
+                <li><a href="servicios.xml">Servicios</a></li>
+                <li><a href="productos.xml">Productos</a></li>
+                <li><a href="#">Todos</a></li>
                 <li><a href="separados.xml">Separados</a></li>
-				<li><a href="../portfolio/contacto.html">Contacto</a></li>
+                <li><a href="../portfolio/contacto.html">Contacto</a></li>
             </ul>
         </nav>   
 
         <div class="contador">
-            <p>Total de productos en el catálogo: 
-                <xsl:value-of select="count($tiendaXml/tienda/productos/producto)"/>
+            <p>Total de productos y servicios en el catálogo: 
+                <xsl:value-of select="count($tiendaXml/tienda/productos/producto) + count($tiendaXml/tienda/servicios/servicio)"/>
             </p>
         </div>
 
-            
         <table> 
-
             <tr>
                 <th>Nombre</th>
                 <th>Precio</th>
                 <th>Precio + IVA</th>  
                 <th>Descuento</th>            
-                <th>Marca</th>                
                 <th>Imagen</th>
-                <th>Stock</th>
+                <th>Stock/Tipo</th>
                 <th>Enlace</th>
             </tr>  
             <tbody>          
@@ -52,7 +49,6 @@
                         <td><xsl:value-of select="precio"/></td>
                         <td><xsl:value-of select="precio + (precio * $iva div 100)"/></td>
                         <td><xsl:value-of select="concat(descuento, '%')"/></td>
-                        <td><xsl:value-of select="marca"/></td>
                         <td> 
                             <img src="{imagen}" alt ="imagen"><xsl:value-of select="nombre"/></img> 
                         </td>
@@ -64,12 +60,28 @@
                         </td>
                     </tr>
                 </xsl:for-each>
+                
+                <xsl:for-each select="$tiendaXml/tienda/servicios/servicio">
+                    <tr>
+                        <td><xsl:value-of select="nombre"/></td>
+                        <td><xsl:value-of select="precio"/></td>
+                        <td><xsl:value-of select="precio + (precio * $iva div 100)"/></td>
+                        <td><xsl:value-of select="concat(descuento, '%')"/></td>
+                        <td> 
+                            <img src="{imagen}" alt ="imagen"><xsl:value-of select="nombre"/></img> 
+                        </td>
+                        <td>Servicio</td>
+                        <td>
+                            <a target="blank" href="{enlace}">
+                                <xsl:value-of select="nombre"/>
+                            </a>
+                        </td>
+                    </tr>
+                </xsl:for-each>
             </tbody>          
         </table>
         <footer> 2025 Koldo, Unai, Nichita, Joshua, todos los derechos reservados.</footer>
     </body>
-
 </html>
-
 </xsl:template>
 </xsl:stylesheet>
