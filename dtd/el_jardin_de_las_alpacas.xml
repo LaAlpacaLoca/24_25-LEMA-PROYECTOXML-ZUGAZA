@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="el_jardin_de_la_alpaca_sch1.xsd"?>
+<?xml-model href="el_jardin_de_la_alpaca_dtd.dtd"?>
 <tienda>
 	<iva>10</iva>
     <servicios>
