@@ -23,5 +23,12 @@
 - **Servicios**: Los servicios disponibles en la tienda son mostrados dinámicamente a partir del XML. Incluye información sobre el nombre del servicio, su precio, enlace y una imagen asociada.
 
 - **Productos**: Se presentan los productos, mostrando su nombre, precio, precio con IVA, precio con IVA menos descuento, marca, imagen, stock disponible y enlace para comprar el producto.
+  
+## Participantes
 
-Proyecto por: Nichita, Joshua, Koldo y Unai
+<div align="center">
+  - Nichita
+  - Joshua
+  - Unai
+  - Koldo
+</div>
