@@ -283,9 +283,10 @@ caption{
 }
 
 table{
-  margin: 5 auto;
+  margin: 20px auto;
   border-collapse: collapse;
-  border-style: inset black;
+  border-style: inset;
+  border-color: black;
   width: 80%;
   background-color: beige;
 }
