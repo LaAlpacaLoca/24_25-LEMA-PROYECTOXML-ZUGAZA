@@ -24,4 +24,4 @@
 
 - **Productos**: Se presentan los productos, mostrando su nombre, precio, precio con IVA, precio con IVA menos descuento, marca, imagen, stock disponible y enlace para comprar el producto.
 
-Nichita, Joshua, Koldo y Unai
+Proyecto por: Nichita, Joshua, Koldo y Unai
